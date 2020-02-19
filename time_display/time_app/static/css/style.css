@@ -1,0 +1,30 @@
+
+body{
+    border: solid;
+    border-width: 10px;
+    width: 75%;
+    margin-left: 150px;
+    
+}
+
+
+
+h1 {
+    background-color: aqua;
+    outline: solid;
+    width: 59%;
+    font-family: Helvetica;
+    text-align: center;
+    margin-left:  190px;
+}
+
+p {
+    outline: solid;
+    width: 50%;
+    background-color: lightcoral;
+    font-family: Helvetica;
+    text-align: center;
+    margin-left:  235px;
+    font-weight: bold;
+    
+}

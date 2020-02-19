@@ -1,8 +1,13 @@
-from django.shortcuts import HttpResponse, redirect
+from django.shortcuts import HttpResponse, redirect, render
 
 
 def index(request):
-    return HttpResponse("I created a fucking Django project!")
+    context = {
+    	"name": "Mad Max",
+    	"favorite_color": "Blood",
+    	"pets": ["Bruce", "Fitz", "Georgie"]
+    }
+    return render(request, "index.html", context)
 
 def new(request):
     return HttpResponse("placeholder to display a new form to create a new blog")

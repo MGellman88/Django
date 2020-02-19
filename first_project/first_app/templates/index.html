@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Django Project</title>
+        {% load static %}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'js/script.js' %}"></script>
+    </head>
+    <body>
+        <img src="{% static 'images/skullflash.jpg' %}" />
+        <h1>Welcome to the Thunderdome</h1>
+            <p>Name: {{name}}</p>
+            <p>Favorite Color: {{favorite_color}}</p>
+            <p>Pets</p>
+                <ul>
+                {% for pet in pets %}
+                    <li>{{pet}}</li>
+                {% endfor %}
+                </ul>
+        <script src="" async defer></script>
+    </body>
+</html>
